@@ -1,0 +1,26 @@
+# FILE: backend/requirements.txt
+# PURPOSE: Lists every Python library Render needs to install to run the API.
+# Render reads this file automatically when it detects a Python project.
+#
+# INSTALL LOCALLY: pip install -r requirements.txt
+
+# ── Web framework ───────────────────────────────────────────────────
+fastapi==0.110.2
+uvicorn[standard]==0.29.0        # "standard" includes websocket + performance extras
+pydantic==2.7.1
+
+# ── ML / Model ──────────────────────────────────────────────────────
+# NOTE: Install CPU-only torch. The full CUDA version is 3x larger
+# and Render's free tier doesn't have a GPU anyway.
+torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+transformers==4.40.2
+tokenizers==0.19.1
+sentencepiece==0.2.0             # Required by XLM-RoBERTa tokenizer
+accelerate==0.30.1
+huggingface-hub==0.23.0          # Downloads model from HuggingFace Hub
+
+# ── Language detection ──────────────────────────────────────────────
+langdetect==1.0.9
+
+# ── Utilities ───────────────────────────────────────────────────────
+numpy==1.26.4

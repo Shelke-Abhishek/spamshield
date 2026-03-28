@@ -1,0 +1,8 @@
+xlmr_spam_model/
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+*.env
+.env
+final_dataset.csv
