@@ -12,7 +12,7 @@ pydantic==2.7.1
 # ── ML / Model ──────────────────────────────────────────────────────
 # NOTE: Install CPU-only torch. The full CUDA version is 3x larger
 # and Render's free tier doesn't have a GPU anyway.
-torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2
 transformers==4.40.2
 tokenizers==0.19.1
 sentencepiece==0.2.0             # Required by XLM-RoBERTa tokenizer
