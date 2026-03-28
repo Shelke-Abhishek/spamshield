@@ -12,7 +12,7 @@
 
 // Switch this to your Render URL after backend deployment:
 // const API_BASE = "https://spamshield-api.onrender.com";
-const API_BASE = "http://localhost:8000";  // ← local development
+const API_BASE = "https://abhishek1805-spamshield-api.hf.space";
 
 // ─────────────────────────────────────────────
 // SECTION 2 — ELEMENT REFERENCES

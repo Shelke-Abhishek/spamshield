@@ -31,4 +31,4 @@ EXPOSE 8000
 # --host 0.0.0.0 makes it accessible from outside the container
 # --workers 1 is important: loading a 1.1 GB model with multiple workers
 #   would use 2.2+ GB RAM and crash on Render's free tier (512 MB limit)
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860", "--workers", "1"]
