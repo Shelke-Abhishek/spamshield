@@ -10,8 +10,7 @@
 // SECTION 1 — CONFIGURATION
 // ─────────────────────────────────────────────
 
-// Switch this to your Render URL after backend deployment:
-// const API_BASE = "https://spamshield-api.onrender.com";
+
 const API_BASE = "https://abhishek1805-spamshield-api.hf.space";
 
 // ─────────────────────────────────────────────
